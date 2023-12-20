@@ -3,7 +3,7 @@ from app import app
 from db_config import mysql
 from flask import jsonify
 from flask import flash, request
-from werkzeug import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 @app.route('/add', methods=['POST'])
